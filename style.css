@@ -1,5 +1,5 @@
 body {
-    padding: 30px;
+    padding: 50px;
     background-color: #ff8000;
     color: #fff;
     /* カラーで文字の色が変わる。バックグラウンドカラーでは背景が変わる */
@@ -10,6 +10,13 @@ p {
     font-weight: bold;
     font-size: 100px;
     font-family:serif;
+    border: dotted #008080 ;
+    margin: 30px;
 
+}
+/* .はclassに対しての値になる */
+.starter-template {
+    padding: 40px 50px;
+    background-color: white;
 }
 
