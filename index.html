@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- headは全体表示 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <!-- bootstrapのCSSコードをしてに入力 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- CSS表示させるこーど忘れずに書く！！ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navタグはタグを表示するとき。HOME、topicなど、、 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project Nyaan</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#list">List</a></li>
+                    <li><a href="#table">Table</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="starter-template">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- グリット数は12になればなん分割してもいい -->
+                    <div class="jumbotron">
+                        <!-- bodyは実際の内容を表示 -->
+                        <h1>吾輩は猫である。</h1>
+                        <p class="lead">名前はまだない</p>
+                        <!-- btnはbootstrapでCSS表示してある -->
+                         <img class="img-responsive center-block" src="https://paiza-webapp.s3.amazonaws.com/files/learning/photo_cat_1024.jpg">
+                         <!-- このタグを入れると自動で大きさを調整してくれる--> 
+                         <h2 id="list">動物リスト</h2>
+                         <!-- h2タグは2番目に大きい見出しの時に使う -->
+                         <ul class="list-group">
+                            <!-- ulタグは箇条書きの時に使う。地味なのでlist-groupを使う bootstarpを使用 -->
+                            <li class="list-group-item">ねこ</li>
+                            <li class="list-group-item">犬</li>
+                            <li class="list-group-item">うさぎ</li>
+                         </ul>
+                         <h2 id ="table">ねこテーブル</h2>
+                         <!-- tableタグは表のこと...table-stropedで表に色付けれる -->
+                         <table class="table table-striped">
+                            <thead>
+                                <!-- theadで表全体、tbodyで表を囲む -->
+                                <tr>
+                                    <th>#</th>
+                                    <th>名前</th>
+                                    <th>特徴</th>
+                                    <th>住所</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>たま</td>
+                                    <td>靴下</td>
+                                    <td>広島</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>ミケ</td>
+                                    <td>三毛</td>
+                                    <td>東京都千代田区秋葉原駅周辺</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>トラ</td>
+                                    <td>シマ</td>
+                                    <td>兵庫県西宮市甲子園町</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>にゃあ</td>
+                                    <td>トラの兄弟</td>
+                                    <td>兵庫県西宮市甲子園町</td>
+                                </tr>
+                            </tbody>
+                         </table>
+                         <h2 id="form">ねこフォーム</h2>
+                         <form action="#" method="post">
+                            <label for="title">タイトル</label>
+                            <input type="text" name="title" id="title">
+                            <button type="submit">送信する</button>
+                            <!--inputタグとbuttonタグで送信ボタン作れる -->
+                         </form>
+                        <a class="btn btn-primary" href="#">トップに戻る</a>
+                        <!-- ボタンを押すとリンクに飛ぶ。ボタンを押すと一番上に飛ぶ。 -->
+                        <!-- <a href="https://ja.wikipedia.org/wiki/%E5%A4%8F%E7%9B%AE%E6%BC%B1%E7%9F%B3" target="_blank">夏目漱石</a> 
+                        アンカータグはリンクを貼るためのタグ-->
+                        
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    
+                        <p>どこで生れたか
+                        とんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。
+                        この書生というのは
+                        時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。書生の顔を見たのがいわゆる人間というものの見始であろう。
+                        掌の上で少し落ちついて
+                        書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。</p>
+                        <!-- classは同じhomepageに同じ技術をいらたい時に使う。一箇所だけ特別な機能を入れたい時にはIDを使う。 -->
+                        <!-- leadは文章をまとめた要約文 -->
+                        <!-- スクリプトタグを２行追加 -->
+
+                </div>    
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
+

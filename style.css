@@ -1,0 +1,14 @@
+body {
+    padding-top: 50px;
+    background-color: #ff8000;
+    /* カラーで文字の色が変わる。バックグラウンドカラーでは背景が変わる */
+    /* rgbはred.blue.greenの三つの色の頭文字*/
+}
+
+
+/* .はclassに対しての値になる */
+.starter-template {
+    padding: 40px 50px;
+    background-color: white;
+}
+
