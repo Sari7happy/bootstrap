@@ -1,6 +1,15 @@
-body{
-    padding-top:50px;
-    background-color:lightgray;
+body {
+    padding: 30px;
+    background-color: #ff8000;
+    color: #fff;
+    /* カラーで文字の色が変わる。バックグラウンドカラーでは背景が変わる */
     /* rgbはred.blue.greenの三つの色の頭文字*/
+}
+
+p {
+    font-weight: bold;
+    font-size: 100px;
+    font-family:serif;
+
 }
 
